@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">FastCalculation</string>
+    <string name="player_name">Nome do jogador</string>
+    <string name="rounds">Partida</string>
+    <string name="round_interval">Intervalo das partidas</string>
+    <string name="one">1</string>
+    <string name="three">3</string>
+    <string name="five">5</string>
+    <string name="letsgo">Vamos!</string>
+    <string name="settings">Configuração</string>
+    <string name="game">Jogue</string>
+    <string name="reinicie_jogo">Reinicie o jogo</string>
+    <string name="sair">Sair</string>
+    <string-array name="rounds">
+        <item>3</item>
+        <item>5</item>
+        <item>8</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bem_vindo">Bem vindo</string>
+    <string name="jogar">Jogar</string>
+    <string name="pontos">Pontos</string>
+    <string name="resultado">Resultado</string>
+</resources>
