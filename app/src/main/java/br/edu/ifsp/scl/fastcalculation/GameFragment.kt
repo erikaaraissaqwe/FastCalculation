@@ -85,7 +85,7 @@ class GameFragment : Fragment() {
         currentRound = calculationGame.nextRound()
         if(currentRound != null){
             fragmentGameBinding.apply {
-                "Round: ${currentRound!!.round}/${settings.rounds}".also{
+                "Rodadas: ${currentRound!!.round}/${settings.rounds}".also{
                     roundTv.text = it
                 }
 
@@ -98,8 +98,8 @@ class GameFragment : Fragment() {
             roundDeadlineHandler.sendEmptyMessageDelayed(MSG_ROUND_DEADLINE, settings.roundInterval)
         }else{
             val points = hits * 10f / (totalGameTime/1000L)
-            val pointsResult = PointsResult(points)
-            println("Fragmetn Game")
+            val pointsResult = PointsResult(points, hits)
+            println("Fragment Game")
             println(pointsResult.toString())
             (context as onResultGame).onResultGame(pointsResult)
         }

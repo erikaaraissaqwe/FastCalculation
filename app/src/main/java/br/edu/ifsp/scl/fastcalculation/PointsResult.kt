@@ -5,5 +5,6 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class PointsResult(
-    val points: Float
+    val points: Float,
+    val hits: Int
 ) : Parcelable

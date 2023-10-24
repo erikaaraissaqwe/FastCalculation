@@ -24,7 +24,7 @@ class GameActivity : AppCompatActivity(), onPlayGame, onResultGame {
 
         settings = intent.getParcelableExtra(Extras.EXTRA_SETTINGS) ?: Settings()
 
-        pointsResult = intent.getParcelableExtra("POINTS") ?: PointsResult(0f)
+        pointsResult = intent.getParcelableExtra(Extras.POINTS_RESULT) ?: PointsResult(0f, 0)
 
         supportFragmentManager.beginTransaction().replace(R.id.gameFl, WelcomeFragment.newInstance(settings)).commit()
     }
